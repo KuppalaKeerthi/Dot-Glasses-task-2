@@ -1,3 +1,55 @@
+Reusable Button Component for E-commerce – React Project
+--------------------------------------------------           
+Purpose:
+-------
+This project demonstrates how to build a **reusable and flexible Button component** using React for e-commerce websites. The component can be easily customized using props and supports features like different sizes, color variants, icons, and disabled states.
+
+---
+
+ Component: `<Button />`
+--------------------
+✅ Props Supported
+
+| Prop      | Type      | Description                                  |
+|-----------|-----------|----------------------------------------------|
+| `text`    | `string`  | Text displayed on the button                 |
+| `variant` | `string`  | Style type: `"primary"` or `"secondary"`     |
+| `size`    | `string`  | Button size: `"small"`, `"medium"`, `"large"`|
+| `onClick` | `function`| Function called when button is clicked       |
+| `disabled`| `boolean` | Disables the button if `true`                |
+| `icon`    | `JSX`     | Optional icon displayed before the text      |
+
+---
+
+🧪 Example Usage (in `App.js`)
+
+```jsx
+<Button
+  text="Add to Cart"
+  variant="primary"
+  size="medium"
+  icon={<FaShoppingCart />}
+  onClick={() => alert("Added to cart!")}
+/>
+
+<Button
+  text="Wishlist"
+  variant="primary"
+  size="small"
+  icon={<FaHeart />}
+/>
+
+<Button
+  text="Checkout"
+  variant="primary"
+  size="large"
+/>
+
+<Button
+  text="Out of Stock"
+  disabled
+/>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,56 +120,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-Reusable Button Component for E-commerce – React Project
---------------------------------------------------           
-Purpose:
--------
-This project demonstrates how to build a **reusable and flexible Button component** using React for e-commerce websites. The component can be easily customized using props and supports features like different sizes, color variants, icons, and disabled states.
-
----
-
- Component: `<Button />`
---------------------
-✅ Props Supported
-
-| Prop      | Type      | Description                                  |
-|-----------|-----------|----------------------------------------------|
-| `text`    | `string`  | Text displayed on the button                 |
-| `variant` | `string`  | Style type: `"primary"` or `"secondary"`     |
-| `size`    | `string`  | Button size: `"small"`, `"medium"`, `"large"`|
-| `onClick` | `function`| Function called when button is clicked       |
-| `disabled`| `boolean` | Disables the button if `true`                |
-| `icon`    | `JSX`     | Optional icon displayed before the text      |
-
----
-
-🧪 Example Usage (in `App.js`)
-
-```jsx
-<Button
-  text="Add to Cart"
-  variant="primary"
-  size="medium"
-  icon={<FaShoppingCart />}
-  onClick={() => alert("Added to cart!")}
-/>
-
-<Button
-  text="Wishlist"
-  variant="primary"
-  size="small"
-  icon={<FaHeart />}
-/>
-
-<Button
-  text="Checkout"
-  variant="primary"
-  size="large"
-/>
-
-<Button
-  text="Out of Stock"
-  disabled
-/>
-
